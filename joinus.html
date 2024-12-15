@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOIN US!</title>
+    <link rel="stylesheet" href="./css/joinus.css">
+</head>
+<body>
+   <div class="container">
+        <form action="#" class="login-form"> 
+            <a href="#" class="asset">注册</a>
+            <h2>登录</h2>           
+            <input type="text" name="username"placeholder="用户名">
+            <input type="password" name="password"placeholder="密码">
+            <button type="submit">登录</button>
+
+        </form>
+   </div>
+
+   <script>
+        var asset = document.getElementsByClassName('asset')[0];
+        console.log(asset);
+        asset.innerHTML = '<a href="#" class="asset">注册</a>'
+        asset.onclick = function(){
+            alert('尚未开发');
+        }
+
+        var submit_event = document.getElementsByTagName('button')[0];
+        console.log(submit_event);
+        submit_event.onclick = function(){
+            alert('请找管理员获取用户名和密码！');
+        }
+        
+    </script>
+</body>
+</html>
